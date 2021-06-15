@@ -10,3 +10,32 @@
     padding: 5px;
 }
 
+/* form css */
+.btn{
+    padding: 0;
+}
+
+div.btn-bar{
+    margin-top: 10px;
+}
+
+div.form-bar{
+    background-color: rgba(224, 224, 224, 0.877);
+    border: solid 15px rgba(224, 224, 224, 0.877);
+    border-radius: 5px;
+}
+
+div.modal-footer{
+    border-top: 0;
+}
+
+div.modal-header{
+    border-bottom: 0;
+}
+
+/* Card css */
+
+div.card{
+    margin-top: 7px;
+    margin-bottom: 5px;
+}

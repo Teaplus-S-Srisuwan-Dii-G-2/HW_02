@@ -18,10 +18,12 @@
     <nav class="bg-light border-bottom menu-bay">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Add new product</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2" id="new_product">Add new product</a>
+                </li>
             </ul>
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
@@ -47,7 +49,7 @@
         <div class="container d-flex flex-wrap justify-content-center">
             <img src="floral.svg" class="float-left web-logo" alt="logo">
             <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none ">
-                <span class="fs-4">La'Floral</span>
+                <span class="fs-4">Floral Studio</span>
             </a>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 align-self-center">
                 <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
@@ -70,13 +72,54 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-7  align-self-start">
-                <div class="row">
-                    <div class="d-flex flex-row justify-content-center" id="output">
-
-                    </div> 
+            <div class="col-9  align-self-start">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="col-12 form-bar" id="output_a">
+                        <div class="row">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <input type="text" class="form-control" placeholder="Flower's name" id="inputnume_F">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control" placeholder="Flower's price" id="inputprice_F">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control" placeholder="Flower's URL" id="inputurl_F">
+                            </div>
+                            <div class="col-3">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1" id="inputseller_F">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">description</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                id="cancal_FP">Cancel</button>
+                            <button type="button" class="btn btn-primary" id="Post_p">Post Product</button>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
+            <div class="row">
+                        <div class="col-12">
+                            <div class="row" id="output">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </body>
